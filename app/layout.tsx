@@ -1,10 +1,10 @@
 import "./globals.css";
-import Header from "@/components/Header";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Guilherme Guido | Data Analyst",
+export const metadata: Metadata = {
+  title: "Guilherme Guido | Data & Operations Analyst",
   description:
-    "Analista de Dados especializado em Power BI, SQL, Snowflake e automação de processos.",
+    "Portfolio of Guilherme Guido – Data Analysis, Power BI, ClickUp, Snowflake, Automation and BI projects.",
 };
 
 export default function RootLayout({
@@ -14,11 +14,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-BR">
-      <body className="bg-zinc-950 text-zinc-100 antialiased">
-        <Header />
-        <main className="max-w-6xl mx-auto px-6 py-14">
-          {children}
-        </main>
+      <body className="bg-zinc-50 text-zinc-900 antialiased">
+        {children}
       </body>
     </html>
   );
