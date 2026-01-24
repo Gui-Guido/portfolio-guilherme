@@ -1,10 +1,24 @@
-import "../globals.css";
-import Header from "@/components/Header";
+﻿import "../globals.css";
+import { IBM_Plex_Sans, Space_Grotesk } from "next/font/google";
+
+const bodyFont = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-body",
+  display: "swap",
+});
+
+const displayFont = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-display",
+  display: "swap",
+});
 
 export const metadata = {
-  title: "Guilherme Guido | Data Analyst",
+  title: "Guilherme Araujo Guido | Senior Analytics Engineer",
   description:
-    "Data Analyst specialized in Power BI, SQL, Snowflake and process automation.",
+    "Senior Analytics Engineer focused on AWS, PySpark, data quality, and BI.",
 };
 
 export default function EnglishLayout({
@@ -13,12 +27,11 @@ export default function EnglishLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en-US">
-      <body className="bg-zinc-950 text-zinc-100 antialiased">
-        <Header />
-        <main className="max-w-6xl mx-auto px-6 py-14">
-          {children}
-        </main>
+    <html lang="en-US" className="bg-zinc-950">
+      <body
+        className={`${bodyFont.variable} ${displayFont.variable} antialiased bg-zinc-950 text-white`}
+      >
+        {children}
       </body>
     </html>
   );

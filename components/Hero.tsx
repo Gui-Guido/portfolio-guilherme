@@ -19,7 +19,7 @@ export default function Hero() {
         </a>
 
         <a
-          href="https://www.linkedin.com/in/gui-guido/"
+          href="https://www.linkedin.com/in/guilherme-araujo-guido"
           target="_blank"
           className="px-6 py-3 rounded-lg border border-slate-300 hover:border-slate-500 transition"
         >

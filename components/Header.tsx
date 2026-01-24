@@ -8,7 +8,7 @@ export default function Header() {
           <a href="#about" className="hover:text-blue-600">Sobre</a>
           <a href="#projects" className="hover:text-blue-600">Projetos</a>
           <a
-            href="https://www.linkedin.com/in/gui-guido/"
+            href="https://www.linkedin.com/in/guilherme-araujo-guido"
             target="_blank"
             className="hover:text-blue-600"
           >
